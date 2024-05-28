@@ -13,11 +13,10 @@ document.getElementById('formContainer').addEventListener('load', function() {
 });
 
 
-//api final try
 
-const sheetId = '1GCli0BLG_CVdjj84U258AEB77GIeBmAp_1AMO6ewoBQ'; 
-const apiKey = 'AIzaSyDH965YdC94Ui-PfBKPrlUIG23DTPD2h0g'; 
-const range = 'Sheet1!E:G,I'; 
+const sheetId = '1FAIpQLScaHg_xa5F48jFshWkq4ahVPFjLQsVYMPnMPMMvAvA5FxpG7w'; // ID from the provided Google Sheets URL
+const apiKey = 'AIzaSyDH965YdC94Ui-PfBKPrlUIG23DTPD2h0g'; // Provided API key
+const range = 'Sheet1!E:G,I'; // Adjust the range to match your data
 
 async function fetchResponses() {
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
